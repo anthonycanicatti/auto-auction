@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/choseone" 
+        android:textSize="25sp"
+        android:textStyle="bold" />"
+
+	<RadioGroup 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    
+	 	<RadioButton
+        	android:id="@+id/buyerButton"
+        	android:padding="12dp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/buyertext" />"
+
+    	<RadioButton
+        	android:id="@+id/sellerButton"
+        	android:padding="12dp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sellertext" />
+	    
+	</RadioGroup>
+    
+        <LinearLayout 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/pricetext"
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pricetext" />
+        
+        <EditText 
+            android:id="@+id/priceEdit"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pricehint" />
+        
+    </LinearLayout>
+    
+        <Button
+            android:id="@+id/submitButton"
+            android:text="@string/submittext"
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="190dp" />
+    
+</LinearLayout>
+
